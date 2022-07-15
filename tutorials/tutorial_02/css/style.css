@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  width: 7%;
+  margin: 0 auto;
+}
