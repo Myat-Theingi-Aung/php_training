@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+section{
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1{
+    margin: 40px 0px;
+    font-size: 40px;
+}
+form{
+    display: inline-block;
+    width: 40%;
+}
+.fileUpload,.createFolder{
+    margin-bottom: 40px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+p{
+    color: green;
+    font-size: 25px;
+}
