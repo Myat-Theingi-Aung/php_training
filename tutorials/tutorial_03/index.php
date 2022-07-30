@@ -11,7 +11,7 @@
     <h1>Tutorial 03</h1>
     <p>
     <?php
-if (isset($_POST['submit'])) {
+    if (isset($_POST['submit'])) {
     $dob = $_POST['dob'];
     echo "Date of Birth : ". $dob . '<br>';
     $today = date('Y-m-d');
@@ -26,9 +26,11 @@ if (isset($_POST['submit'])) {
     </p>
     <form action="" method="post">
         <label for="dob">Date of Birth :</label>
-        <input type="date" name="dob" class="dob" value="<?php if(isset($_POST['dob'])){echo $_POST['dob'];} ?>">
+        <input type="date" name="dob" class="dob" value="<?php if(isset($_POST['dob'])){echo $_POST['dob'];} ?>" required>
         <br>
+        <div class="up-btn">
         <input type="submit" class="btn" name="submit" value="Calculate Age">
+        </div>
     </form>
 </body>
 </html>

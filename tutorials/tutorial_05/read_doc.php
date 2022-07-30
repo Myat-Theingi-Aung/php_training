@@ -18,6 +18,8 @@ $source = "doc_file.html";
 $objWriter = PhpOffice\PhpWord\IOFactory::createWriter($phpWord,'HTML');
 $objWriter->save($source);
 
+include "doc_file.html";
+
 ?>
 
 </body>

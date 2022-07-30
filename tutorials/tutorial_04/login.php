@@ -4,7 +4,8 @@ $_SESSION['email'] = $_POST['email'];
 $_SESSION['password'] = $_POST['password'];
 
 if ($_SESSION['email'] && $_SESSION['password']) {
-    print_r($_SESSION);
+    //print_r($_SESSION);
+    echo "<p>Login Successfully! ". $_SESSION['email'] ."</p>";
     echo "<br>";
     echo "<a href='logout.php'>logout</a>";
 } else {

@@ -10,13 +10,17 @@
 <body>
     <h1>Tutorial 04</h1>
     <form action="login.php" method="post">
-        <label for="email">Email : </label>
-        <input type="email" name="email">
-        <br>
-        <label for="password">Password : </label>
-        <input type="password" name="password">
-        <br>
-        <input type="submit" value="login" name="submit">
+        <div class="email-div">
+            <label for="email">Email : </label>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+        </div>       
+        <div class="pass-div">
+            <label for="password">Password : </label>
+            <input type="password" name="password" placeholder="123456" required>
+        </div>
+        <div class="btn-div">
+            <input type="submit" value="Login" name="submit">
+        </div>
     </form>
 </body>
 </html>

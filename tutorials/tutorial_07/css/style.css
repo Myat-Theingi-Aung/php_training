@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 40px 0px 20px;
+}
+
+form {
+  display: inline-block;
+  width: 40%;
+  padding: 20px 0px;
+}
+
+div {
+  padding: 10px 0px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+img {
+  border: 1px solid black;
+}
+
+span {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+p.error {
+  color: red;
+  font-size: 20px;
+}

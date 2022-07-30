@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+p.error{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p.success{
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form{
+    padding-top: 0.1px;
+}
+
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+label {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.update-div{
+    margin-left: 30%;
+}
+
+
+.update-form .btn-div{
+    margin-left: 13%;
+    margin-top: 40px;
+}
+
+
+.left{
+    float: left;
+    width: 35%;
+    margin-left: 6%;
+}
+
+.name-div {
+    margin: 20px 10px;
+}
+
+input.name,input.age {
+    width: 297px;
+    padding: 10px 0px;
+    outline: none;
+}
+
+.address-div {
+    margin-bottom: 30px;
+}
+
+.address-div label {
+    margin-right: 16px;
+}
+
+.age-div {
+    margin-bottom: 20px;
+}
+
+.age-div label {
+    margin-left: 30px;
+    margin-right: 18px;
+}
+
+.gender input{
+    width: 20px;
+}
+
+.gender label{
+    margin-left: 4px;
+    margin-right: 13px;
+}
+
+textarea{
+    outline: none;
+}
+
+.btn-div {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+
+.right{
+    float: right;
+    width: 59%;
+}
+
+th,tr,td{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+table{
+    border-collapse: collapse;
+}
+
+.table-up{
+    margin-left: 27%;
+    margin-bottom: 46px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: red;
+    margin-right: 5px;
+}
+
+.tbl-upd-btn{
+    background-color: blue;
+}
+
+input {
+    width: 295px;
+    padding: 10px 0px;
+    outline: none;
+    margin-top: 10px;
+}
+
+a.changeColor{
+    background-color: transparent;
+    color: black;
+}
+
+
+.email-div , .pass-div{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+}
+
+.login-form,.login-error, .mail-success {
+    margin-left: 40%;
+}
+
+.login-link a{
+    color: black;
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: transparent;
+    margin-right: 5px;
+
+}
+
+.login-link, .name-div-register , .email-div, .password-div, .confirm-div{
+    margin-bottom: 20px;
+}
+
+.register-info{
+    margin-left: 40%;
+}
+
+.logout-btn{
+    float: right;
+    margin-top: -65px;
+}
+

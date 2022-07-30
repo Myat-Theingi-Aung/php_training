@@ -13,10 +13,10 @@
     <form action="" method="post" enctype="multipart/form-data">
         <div class="fileUpload">
             <label for="file">Choose Image :</label>
-            <input type="file" name="image" accept="image/png,image/gif,image/jpg,image/jpeg">
+            <input type="file" name="image">
         </div>
         <div class="createFolder">
-            <input type="text" name = "folder_name" placeholder="Folder Name" required>
+            <input type="text" name ="folder_name" placeholder="Folder Name">
         </div>
         <div class="btn-up">
             <input type="submit" name="submit" value="Upload">
@@ -24,18 +24,25 @@
     </form>
 </section>
 <?php
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
 
-    $folder_name = $_POST['folder_name'];
-    mkdir($folder_name);
-
-    $image =$folder_name."/". $_FILES['image']['name'];
-    move_uploaded_file($_FILES['image']['tmp_name'], $image);
-
-    echo "<p>Upload Successfully!</p>";
+    if ($_FILES['image']['name'] && $_POST['folder_name'] != "") {
+        $fileType = ['image/jpeg', 'image/png', 'image/jpg', 'image/gif'];
+        $folder_name = $_POST['folder_name'];
+        if (in_array($_FILES['image']['type'], $fileType)) {
+            mkdir($folder_name);
+            $image = $folder_name . "/" . $_FILES['image']['name'];
+            move_uploaded_file($_FILES['image']['tmp_name'], $image);
+            echo "<p>Upload Successfully!</p>";
+        } else {
+            echo "<p class='error'>Select .png, .jpeg, .gif file</p>";
+        }
+    } else {
+        echo "<p class='error'> Input field is require! </p>";
+    }
 
 }
 ?>
-    
+
 </body>
 </html>

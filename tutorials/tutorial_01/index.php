@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-h1>Tutorial 01</h1>
+<h1>Tutorial 01</h1>
   <table>
     <?php
 for ($row = 1; $row <= 8; $row++) {

@@ -2,17 +2,35 @@
   box-sizing: border-box;
 }
 
-h1 {
+body{
   text-align: center;
 }
 
-.dob {
-  margin-bottom: 20px;
-  padding: 5px;
-  border-radius: 10px;
+h1{
+  margin: 20px 0 0 0;
+  font-size: 30px;
 }
 
-.btn {
-  padding: 10px;
+form{
+  display: inline-block;
+  width: 30%;
+}
+
+input.dob {
+  margin: 20px 0px;
+  padding: 10px 50px;
   border-radius: 10px;
+  border: 1px solid black;
+}
+
+.up-btn{
+  text-align: center;
+}
+
+input.btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(19, 19, 49);
+  color: white;
 }
